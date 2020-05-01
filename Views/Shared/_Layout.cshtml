@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Employee App</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" rel="preload" />
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                @Html.ActionLink("Employee Register", "Index", "Employee", null, new { @class = "navbar-brand" })
+            </div>
+        </div>
+    </div>
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>Employee App</p>
+        </footer>
+    </div>
+    <!--
+        <div class="loaderbody" id="loaderbody">
+        <div class="loader"></div>
+    </div>
+    -->
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+    <script src="~/Scripts/Scripts.js" defer></script>
+    <script src="~/Scripts/notify.min.js" defer></script>
+    <!--
+        <noscript><link rel='stylesheet' id='mashsb-styles-css' href='http://www.codaffection.com/wp-content/cache/busting/1/wp-content/plugins/mashsharer/assets/css/mashsb.min-3.7.4.css' type='text/css' media='all' /></noscript><noscript><link rel='stylesheet' id='mashnet-styles-css' href='http://www.codaffection.com/wp-content/cache/busting/1/wp-content/plugins/mashshare-networks/assets/css/mashnet.min-2.4.5.css' type='text/css' media='all' /></noscript><noscript><link rel='stylesheet' id='avada-stylesheet-css' href='http://www.codaffection.com/wp-content/cache/busting/1/wp-content/themes/Avada/assets/css/style.min-6.2.1.css' type='text/css' media='all' /></noscript><noscript><link rel='stylesheet' id='avada-IE-css' href='http://www.codaffection.com/wp-content/themes/Avada/assets/css/ie.min.css?ver=6.2.1' type='text/css' media='all' /></noscript><noscript><link rel='stylesheet' id='fusion-dynamic-css-css' href='http://www.codaffection.com/wp-content/cache/busting/1/wp-content/uploads/fusion-styles/572064f648579e2dc0b499f2732461e4.min-2.2.1.css' type='text/css' media='all' /></noscript><noscript><link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" /></noscript><noscript><link href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css" rel="stylesheet" /></noscript><noscript><link rel='stylesheet' id='wp-codemirror-css' href='http://www.codaffection.com/wp-content/cache/busting/1/wp-includes/js/codemirror/codemirror.min-5.29.1-alpha-ee20357.css' type='text/css' media='all' /></noscript><noscript><link rel='stylesheet' id='code-editor-css' href='http://www.codaffection.com/wp-admin/css/code-editor.min.css' type='text/css' media='all' /></noscript><noscript><link rel='stylesheet' id='wp-block-library-theme-css' href='http://www.codaffection.com/wp-includes/css/dist/block-library/theme.min.css' type='text/css' media='all' /></noscript>
+    -->
+</body>
+</html>
